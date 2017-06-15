@@ -10,8 +10,6 @@ void init(){
 		otherPosition[i]=0.0f;
 	}
 	count = 0;
-	//IMPORTANT: make sure to set any variables that need an initial value.
-	//Do not assume variables will be set to 0 automatically!
 }
 
 void loop(){
