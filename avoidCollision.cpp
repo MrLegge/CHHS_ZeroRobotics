@@ -15,8 +15,8 @@ void init(){
 void loop(){
 	//This function is called once per second.  Use it to control the satellite.
 	if (count <= 11){
-		DEBUG(("myPosition %d",myPosition[count]));
-		DEBUG(("otherPosition %d",otherPosition[count]));
+		DEBUG(("myPosition %f",myPosition[count]));
+		DEBUG(("otherPosition %f",otherPosition[count]));
 	}
 	count++;
 }
