@@ -1,0 +1,23 @@
+//this function just sets all the elements of the float array to 0
+//It is also an example of overloading a function (same name but different argument types)
+
+void sanitiseArray(float *inComing, int length){
+		for(int i=0;i<length;i++){
+		inComing[i]=0.0f;	
+	}
+} 
+void sanitiseArray(int *inComing, int length){
+		for(int i=0;i<length;i++){
+		inComing[i]=0.0f;	
+	}
+} 
+void sanitiseArray(short *inComing, int length){
+		for(int i=0;i<length;i++){
+		inComing[i]=0.0f;	
+	}
+} 
+void sanitiseArray(long *inComing, int length){
+		for(int i=0;i<length;i++){
+		inComing[i]=0.0f;	
+	}
+} 
