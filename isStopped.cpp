@@ -4,21 +4,11 @@
 //Declare any variables that need to be shared within this block  
 float myPreviousPosition[12];
 float myCurrentPosition[12];
-int count; 
-void init(){
-	//set all values in array to zero
-	for(int i=0;i<12;i++){
-		myPosition[i]=0.0f;
-		targetPosition[i]=0.0f;
-	}
-	count = 0;
-}
-
-void loop(){
+Boolean isStopped(){
 	//This function is called once per second.  Use it to control the satellite.
-	if (count <= 11){
-		DEBUG(("myPosition %f",myPosition[count]));
-		DEBUG(("targetPosition %f",targetPosition[count]));
+	if (thisPosition aproxEqualTo nextPosition){  // need to sample one reading against the next to compare and be sure that you are not significantly moving
+		DEBUG(("myPosition %f",myPosition[1])); //not correct will need to check x y z plus rotation
+		DEBUG(("targetPosition %f",myCurrentPosition[1]));  //not correct will need to check x y z plus rotation
 	}
-	count++;
+	
 }
