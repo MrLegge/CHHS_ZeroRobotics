@@ -2,21 +2,11 @@
 //Declare any variables that need to be shared within this block  
 float myPosition[12];
 float centralPosition[12];
-int count; 
-void init(){
-	//set all values in array to zero
-	for(int i=0;i<12;i++){
-		myPosition[i]=0.0f;
-		centralPosition[i]=0.0f;
-	}
-	count = 0;
-}
 
-void loop(){
-	//This function is called once per second.  Use it to control the satellite.
-	if (count <= 11){
+void revolve(){
+	//This function is called to rotate the satilite
+	if (rotation is reached){
 		DEBUG(("myPosition %f",myPosition[count]));
 		DEBUG(("centralPosition %f",centralPosition[count]));
 	}
-	count++;
 }
