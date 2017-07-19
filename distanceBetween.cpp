@@ -2,22 +2,12 @@
 //Declare any variables that need to be shared within this block  
 float myPosition[12];
 float otherPosition[12];
-int count; 
-void init(){
-	//set all values in array to zero
-	for(int i=0;i<12;i++){
-		myPosition[i]=0.0f;
-		otherPosition[i]=0.0f;
-	}
-	count = 0;
-}
 
-void loop(){
-	//This function is called once per second.  Use it to control the satellite.
-	if (count <= 11)
+float distanceBetween(){
+	//calculate the distance between the two objects
+	if (true)
 	{
 		DEBUG(("myPosition %f",myPosition[count]));
 		DEBUG(("otherPosition %f",otherPosition[count]));
 	}
-	count++;
 }
